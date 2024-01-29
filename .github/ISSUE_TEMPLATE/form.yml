@@ -141,9 +141,8 @@ body:
       label: Tool
       description: What tool do you want to translate?
       options:
-        - FnF Article List Generator
         - CampWiz
-      default: 1
+      default: 0
     validations:
       required: true
   - type: checkboxes
@@ -152,7 +151,6 @@ body:
       label: Are you familiar with the JSON file format?
       options:
         - label: I have knowledge about JSON file format
-        - label: I don't know
   - type: checkboxes
     id: terms
     attributes:
