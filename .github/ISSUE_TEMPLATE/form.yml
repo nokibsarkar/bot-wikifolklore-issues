@@ -1,0 +1,56 @@
+name: Request for translation
+description: Request for translation
+title: "[TR]: "
+labels: ["enhancement", "translation"]
+projects: ["bot-wikifolklore", "bot-wikifolklore-issues"]
+assignees:
+  - nokibsarkar
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting a translation! Please fill out the information below to help us get started.
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email, wiki username, telegram username, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: language
+    attributes:
+      label: Language
+      description: What language do you want to translate to?
+      placeholder: ex. Bengali
+      value: English
+    validations:
+      required: true
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      description: What tool do you want to translate?
+      options:
+        - FnF Article List Generator
+        - CampWiz
+      default: 1
+    validations:
+      required: true
+  - type: dropdown
+    id: file_type
+    attributes:
+      label: Are you familiar with the JSON file format?
+      multiple: false
+      options:
+        - Yes
+        - No
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
