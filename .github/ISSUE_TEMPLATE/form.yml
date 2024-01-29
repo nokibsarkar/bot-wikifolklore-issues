@@ -44,8 +44,8 @@ body:
       label: Are you familiar with the JSON file format?
       multiple: false
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
   - type: checkboxes
     id: terms
     attributes:
